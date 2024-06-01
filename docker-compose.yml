@@ -1,0 +1,14 @@
+services:
+  conuds-docker:
+    image: ghcr.io/concordia-fsae/containers/rust:v1.0.0
+    container_name: conuds-docker
+    hostname: conuds
+    volumes: # mount pts
+      - .:/conUDS
+    user: rustuser
+    tty: true # open terminal for interacting
+    stdin_open: true
+    privileged: true
+    devices:
+      # map host's usb buses to container's buses for st-link programmer
+      - "/dev/bus/usb/:/dev/bus/usb/"
