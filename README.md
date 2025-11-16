@@ -1,3 +1,6 @@
+> [!WARNING]
+> This code has moved! It is now part of our main [firmware](https://github.com/concordia-fsae/firmware/tree/master/drive-stack/conUDS) repo.
+
 conUDS
 ============================
 A UDS client written for use by the Concordia FSAE team.
